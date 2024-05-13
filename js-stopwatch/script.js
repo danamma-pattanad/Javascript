@@ -73,7 +73,9 @@ class Timer{
         pauseBTN.innerHTML = `<span class="material-symbols-outlined">pause</span> Stop`
         startBTN.style.display = `flex`;
         pauseBTN.style.display = `flex`;
+        pauseBTN.classList.add("disabled");
         resetBTN.style.display = `flex`;
+        resetBTN.classList.add("disabled");
         this.elapsedTime = 0;
         TimerField.innerText = `00:00:00`;
     }
